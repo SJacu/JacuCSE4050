@@ -12,5 +12,9 @@ Report 1 Progress: Figured out how to ssh into github and created this remote re
 	- Followed ssh tutorials on how to remotly connect to Github through the terminal
 		https://kbroman.org/github_tutorial/pages/first_time.html
 		https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
-	-Created reposity on GitHub and pushed this README.txt file onto it.
-		
+	- Created reposity on GitHub and pushed this README.txt file onto it.
+
+	- Read over html documentation and a "getting started guide" to begin playing with html
+		https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+	- Uploaded an image of a cat for use in my first html test
+	- Created a file first-html-test.html file, which shows usage of a generic html file set-up, usage of heading and text manipulation elements, and a image based link to a youtube page.
