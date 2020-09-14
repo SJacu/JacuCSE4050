@@ -20,6 +20,8 @@ Report 1 Progress: Figured out how to ssh into github and created this remote re
 	- Created a file: HTML_Experiments/first-html-test.html
 		-shows usage of a generic html file set-up, usage of heading and text manipulation elements, and a image based link to a youtube page.
 
+-------------------------------------------------------------------------------------------------------------------------------
+
 Report 2 Progress: Created a couple of css examples and a basic javascript example and uploaded to github.
 	-Read some more html documents on the MDM website about text formatting and the basic sctructure of a website
 		https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals
@@ -46,6 +48,5 @@ Report 2 Progress: Created a couple of css examples and a basic javascript examp
 		generic-style.css will be the css file I continue to use moving forward, and will I will expand it as nessesary as I continue making further into Web Development.
 		first-javascript-test.html and test1-script.js work together to make a first basic JavaScript test, asking for the user's name and will then print it out onto the page underneath.
 		*NOTE: html, css, and javascrtipy files should be in the same directory to find eachother
-
 	-pushed everything onto my github repo.
 
