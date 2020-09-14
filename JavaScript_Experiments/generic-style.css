@@ -1,0 +1,21 @@
+﻿/* Samuel Jacuinde */
+/* CSE 4050 */
+/* File will continue to be used and improved as the generic style for the html pages I make.*/
+
+
+/* sets the background color to an aquamarine color */
+body
+{
+    background-color: cornflowerblue;
+}
+
+/* sets the main heading color to white */
+h1
+{
+    color: white;
+}
+
+/* sets normal paragraph colors to white */
+p {
+    color: white;
+}

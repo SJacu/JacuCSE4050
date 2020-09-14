@@ -1,0 +1,30 @@
+﻿/* Samuel Jacuinde */
+/* CSE 4050 */
+/* File is used with website-example.html */
+
+/* sets the background color to an aquamarine color */
+body
+{
+    background-color: mediumaquamarine;
+}
+
+/* sets the main heading color to white */
+h1
+{
+    color: white;
+}
+
+h2 {
+    color: mediumpurple;
+}
+
+/* sets normal paragraph colors to white */
+p {
+    color: white;
+}
+
+/* text inside the footer will be a dark green */
+footer p
+{
+    color: darkslategrey;
+}

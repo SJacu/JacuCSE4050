@@ -1,0 +1,30 @@
+﻿/* Samuel Jacuinde */
+/* CSE 4050 */
+/* File is used with my-first-css-test.html */
+
+/* Sets the background of the page to blue */
+body
+{
+    background-color: cornflowerblue;
+}
+
+/* Will set the first paragraph after the header Mint Green */
+h1 + p
+{
+    color: chartreuse;
+}
+
+/* Will set other page paragraphs to be a snowy-white color */
+p {
+    color: snow;
+}
+
+/* Will create a pruple box around anything with the box class */
+.box
+{
+    border: 5px solid black;
+    padding: 10px;
+    width: calc(50%);
+    background-color: rebeccapurple;
+    color: snow;
+}
