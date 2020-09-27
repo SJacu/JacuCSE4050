@@ -49,4 +49,21 @@ Report 2 Progress: Created a couple of css examples and a basic javascript examp
 		first-javascript-test.html and test1-script.js work together to make a first basic JavaScript test, asking for the user's name and will then print it out onto the page underneath.
 		*NOTE: html, css, and javascrtipy files should be in the same directory to find eachother
 	-pushed everything onto my github repo.
+--------------------------------------------------------------------------------------------------------------------------------
+Report 3 Progress: Continued reading about Javascript, and how it can be used to interact with html.
+		   ((As well as learned a little more about structuring html to work with JavaScript))
+	-Read the javascript.info to get a feeling for how clsoe javascript is to other languages such as c++, C#, or Java.
+		https://javascript.info/
+	-After reading a little more about JavaScript, I then followed a tutorial on the guides I've used previously to learn the basics of html, css, and JavaScript
+		https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash
+	
+	-From the tutorial, I re-wrote and split all the code into three files in my JavaScript_Experiments folder:
+		-the-guessing-game.html
+		-guessing-game-script.js
+		-generic-guessing-game.css
 
+	-After re-writing, commenting, and running the html game, I began to restructure the game for additional changes I wanted to make:
+		-I had the game print out what the number was to the player, apon losing the game.
+		-I polished the formatting of the previous guess list, having it put commas after each attempted guess.
+		-Added ability for player to specify range of numbers generated, as well as how many turns they should be allowed to have
+			-For the ranges, player cannot select a lower range higher than max range, and player cannot select a max range smaller than lower range

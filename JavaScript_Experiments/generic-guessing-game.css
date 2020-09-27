@@ -1,0 +1,42 @@
+﻿/* Samuel Jacuinde */
+/* CSE 4050 */
+/* generic-guessing-game.css */
+/* A branch file off of my generic css file for this game.*/
+/* Peices of this css sheet are sampled from a tutorial provided in the learning material here: */
+/* https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash */
+
+/* sets the font of the page to sans-serif varient */
+html {
+    font-family: sans-serif;
+}
+
+/* sets background to a blue color, and onl uses about half the screen */
+body {
+    background-color: cornflowerblue;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* sets the main heading color to white */
+h1 {
+    color: white;
+}
+
+/* sets the secondary heading's color to white */
+h2 {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+/* sets normal paragraph colors to white */
+p {
+    color: white;
+}
+
+.lastResult {
+    color: white;
+    padding: 3px;
+}

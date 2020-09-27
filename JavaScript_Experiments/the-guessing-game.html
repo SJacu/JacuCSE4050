@@ -1,0 +1,50 @@
+﻿<!-- Samuel Jacuinde -->
+<!-- CSE 4050 -->
+<!-- the-guessing-game.html -->
+<!-- This guessing game and it's code are a re-written and small expansion to the tutorial provided in the learning material here: -->
+<!-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Number Guessing Game</title>
+
+        <!-- Applies my general style, plus a few more extras to the html file -->
+        <link rel="stylesheet" href="generic-guessing-game.css">
+
+        <!-- Applies GuessingGameScript.js to the html, making it functional -->
+        <script src="guessing-game-script.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Guessing the Number</h1>
+
+        <button class="setRangeMin">Set Minimum</button> <!-- Button to set minimum of generated range -->
+        <button class="setRangeMax">Set Maximum</button> <!-- Button to set maximum of generated range -->
+        <button class="setGuesses">Set number of Guesses</button> <!-- Button to set your number of turns -->
+
+        <!-- Custom elements min, max, and turns used by the JavaScript code to dynamically change as the player ajusts settings -->
+        <p>The computer will generate a number from <min>1</min> to <max>100</max>. Guess the number in <turns>10</turns> turns or less, you will be told if the number is too high or low</p>
+
+        <!-- Seperates the entry information from the rest of the page -->
+        <div class="form">
+            <label for="guessField">Enter a guess: </label>         <!-- Acts as a visual label for the input feild -->
+            <input type="text" id="guessField" class="guessField">  <!-- an input feild, which takes the user input and compares to the generated number -->
+            <button class="guessSubmit"> Submit Guess </button>     <!-- button to submit the guess typed in the input feild -->
+        </div>
+
+        <!-- The section of the page which will hold all the results of the game -->
+        <div class="resultParas">
+            <p class="guesses"></p>     <!-- This is where the list of guesses will be listed for the player to see -->
+            <p class="lastResult"></p>  <!-- Will mention if your entered guess was true or false -->
+            <p class="lowOrHi"></p>     <!-- says if your guess was too high or too low -->
+        </div>
+
+        <h2>Challenge yourself!</h2>
+        <p>Change the range of the numbers generated!  Give yourself more or less chances to guess the correct number!</p>
+
+    </body>
+
+</html>
