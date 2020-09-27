@@ -95,12 +95,16 @@ setRangeMin.addEventListener("click", Set_Minumum);
 
 
 function Set_Maximum() {
+
+    let canceled = false;
+
     //Prompts the player to put in their desired maximum number
     tempVal = Number(prompt("Enter the higher end of the range you would like"));
     while ((tempVal < minVal) || (tempVal === 0)) {
         if (tempVal === 0) //If the value is 0, or if the user pressed cancel, tempVal is set to current maximum value
         {
-            tempVal = maxVal;
+            tempVal = maxVal; //results in no change in maxval after breaking from while loop
+            canceled = true;
             break;
         } else {
             //if entered value is smaller than minumum, it prompts for re-entry
@@ -108,7 +112,13 @@ function Set_Maximum() {
         }
     }
 
-    maxVal = tempVal; //number of guesses is set to tempVal
+    //updates or does not change maxVal depending on input
+    if(canceled)
+    {
+        maxVal = tempVal; // if user cancelled input, dont change current MaxVal
+    }else{
+        maxVal = tempVal + 1; //if new input was accepted, maxVal is set to TempVal + 1 ((since the top range must be one more specified in order to be included in number generation))
+    }
     max = document.querySelector("max");
     max.textContent = maxVal;
 
