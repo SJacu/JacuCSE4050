@@ -74,11 +74,12 @@ Report 4 Progress: Playing with JSON and Firebase Hosting  (Possibly began work 
 	-Created two new files in my JavaScript_Experiments folder:
 		-json-example.html
 		-json-testing.js
+		-a runnable version of this expeirment can be found here: https://jacu-cse4050-firebase.firebaseapp.com/JavaScript_Experiments/json-example.html
+		
 
 	-Watched and followed the first three videos of a tutorial on firebase hosting and how to desploy my first website
 		-https://www.youtube.com/watch?v=mmmaeHBCTOw&list=PL4cUxeGkcC9he0kHAyiyr3dDO2xw0NWoP&ab_channel=TheNetNinja
 	-Created project on firebase, installed node.js and firebase tools onto computer, and initialized my first firebase project.
-
 	-Based on website-example.html in my css experiment, I created the following new index files:
 		-index.html in my 			root-Folder
 		-copy of my generic-style.css into my 	root folder
