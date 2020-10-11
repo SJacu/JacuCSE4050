@@ -8,10 +8,37 @@
     <head>
         <meta charset="utf-8">              <!-- Includes the utf 8 character set into the webpage -->
         <title>Meet Your New Cat</title>    <!-- Sets the title of the tab -->
+
+
+
+        <!-- ********** Firebase chunk ********** -->
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/7.23.0/firebase-app.js"></script>
+
+        <!-- include only the Firebase features as you need -->
+        <!-- to be added later:  <script defer src="/__/firebase/7.23.0/firebase-auth.js"></script> -->
+        <!-- <script defer src="/__/firebase/7.23.0/firebase-database.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-messaging.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-storage.js"></script> -->
+
+        <script defer src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-remote-config.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-performance.js"></script>
+        <!-- initialize the SDK after all desired features are loaded -->
+        <script defer src="/__/firebase/init.js"></script>
+        <!-- ********** END Firebase chunk ********** -->
+
     </head>
 
     <!-- Includes everything that will be seen by the user -->
     <body>
+
+        <nav>
+            <ul>
+                <li>  <a href="../index.html"> Home </a>  </li> <!-- Leads back to home page -->
+            </ul>
+        </nav>
+
         <h1>Meet Your New Cat!</h1>
 
         <p>The cat is <em> <strong> VERY </strong> </em> grumpy</p>

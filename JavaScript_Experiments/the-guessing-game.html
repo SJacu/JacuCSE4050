@@ -16,15 +16,45 @@
 
         <!-- Applies GuessingGameScript.js to the html, making it functional -->
         <script src="guessing-game-script.js" defer></script>
+
+
+
+        <!-- ********** Firebase chunk ********** -->
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/7.23.0/firebase-app.js"></script>
+
+        <!-- include only the Firebase features as you need -->
+        <!-- to be added later:  <script defer src="/__/firebase/7.23.0/firebase-auth.js"></script> -->
+        <!-- <script defer src="/__/firebase/7.23.0/firebase-database.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-messaging.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-storage.js"></script> -->
+
+        <script defer src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-remote-config.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-performance.js"></script>
+        <!-- initialize the SDK after all desired features are loaded -->
+        <script defer src="/__/firebase/init.js"></script>
+        <!-- ********** END Firebase chunk ********** -->
+
     </head>
 
     <body>
-        <h1>Guessing the Number</h1>
+        <!-- "title-and-logo" section -->
+        <header>
+            <h1>Guessing the Number</h1>
+        </header>
+
+        <!-- navigation bar -->
+        <nav>
+            <ul>
+                <li>  <a href="../index.html"> Back To Home </a>  </li> <!-- send back to home page -->
+                <li>  <a href="javascript-index.html"> Back To Javascript Experiments </a>  </li> <!-- send back to javascript page -->
+            </ul>
+        </nav>
 
         <button class="setRangeMin">Set Minimum</button> <!-- Button to set minimum of generated range -->
         <button class="setRangeMax">Set Maximum</button> <!-- Button to set maximum of generated range -->
         <button class="setGuesses">Set number of Guesses</button> <!-- Button to set your number of turns -->
-
         <!-- Custom elements min, max, and turns used by the JavaScript code to dynamically change as the player ajusts settings -->
         <p>The computer will generate a number from <min>1</min> to <max>100</max>. Guess the number in <turns>10</turns> turns or less, you will be told if the number is too high or low</p>
 

@@ -67,3 +67,27 @@ Report 3 Progress: Continued reading about Javascript, and how it can be used to
 		-I polished the formatting of the previous guess list, having it put commas after each attempted guess.
 		-Added ability for player to specify range of numbers generated, as well as how many turns they should be allowed to have
 			-For the ranges, player cannot select a lower range higher than max range, and player cannot select a max range smaller than lower range
+--------------------------------------------------------------------------------------------------------------------------------
+Report 4 Progress: Playing with JSON and Firebase Hosting  (Possibly began work on Webapp1)
+	-Read the javascript.info to read about how to use JSON.stringify() and JSON.parse()
+		https://javascript.info/
+	-Created two new files in my JavaScript_Experiments folder:
+		-json-example.html
+		-json-testing.js
+
+	-Watched and followed the first three videos of a tutorial on firebase hosting and how to desploy my first website
+		-https://www.youtube.com/watch?v=mmmaeHBCTOw&list=PL4cUxeGkcC9he0kHAyiyr3dDO2xw0NWoP&ab_channel=TheNetNinja
+	-Created project on firebase, installed node.js and firebase tools onto computer, and initialized my first firebase project.
+
+	-Based on website-example.html in my css experiment, I created the following new index files:
+		-index.html in my 			root-Folder
+		-copy of my generic-style.css into my 	root folder
+		-css-index.html in my 			CSS_Experiments Folder
+		-copied my generic-style.css into my 	CSS_Experiments Folder
+		-javascript-index.html in my 		JavaScript_Experiments folder
+		-copied my generic-style.css into my 	JavaScript_Experiments Folder
+
+	-On each html page, new and old, I extensivly added new navigation bars and added my firebase header chunk to include all firebase .js SDK packages.
+		-Essentially, the firebase hosting is now a working showcase of all the work I have so far done in the course, and I will utilize the hosted page as a third form of report to show the working examples.  Files will continue to be pushed to git repository
+
+	-pushed all new file changes to my github, and deployed all work and files onto my firebase website.

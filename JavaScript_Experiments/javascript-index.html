@@ -1,19 +1,15 @@
 ﻿<!-- Samuel Jacuinde -->
 <!-- CSE 4050 -->
-<!-- first-javascript-test.html -->
+<!-- javascript-index.html -->
 <!DOCTYPE html>
 
-<html lang="en">
-
+<html>
     <head>
-        <meta charset="utf-8" />
-        <title>JavaScript Debut</title>
+        <meta charset="utf-8">
+        <title>My Simple Website</title>
 
-        <!-- Applies the general style from the css file -->
+        <!--calls the generic-style.css file to be applied to the site-->
         <link rel="stylesheet" href="generic-style.css">
-
-        <!-- Applies the javascript file "test1-script.js" after the page has loaded -->
-        <script src="test1-script.js" defer></script>
 
         <!-- ********** Firebase chunk ********** -->
         <!-- update the version number as needed -->
@@ -35,23 +31,32 @@
     </head>
 
     <body>
+
         <!-- "title-and-logo" section -->
         <header>
-            <h1> Here's A little Example of JavaScript </h1>
+            <h1>A Test Site for for my work so far in CSE 4050</h1>
         </header>
 
         <!-- navigation bar -->
         <nav>
             <ul>
                 <li>  <a href="../index.html"> Back To Home </a>  </li> <!-- send back to home page -->
-                <li>  <a href="javascript-index.html"> Back To Javascript Experiments </a>  </li> <!-- send back to javascript page -->
             </ul>
         </nav>
 
-        <p> The very first example of Javascript working in on the site is by print "hello user!" into the console.</p>
+        <!-- the "main" content of a website page, is only meant to be used once per page -->
+        <main>
+            <h2>My Javascript Experiments</h2>
+            <p>This is where my experiments for javascript can be found. Below are the examples of JavaScript I have.</p>
+        </main>
 
-        <!-- a button element that is used by the javascript file -->
-        <button>Click me to Add your name onto the page!</button>
+        <div>
+            <ul>
+                <li>  <a href="first-javascript-test.html"> First Javascript Test </a>  </li> <!-- Send to my first javascript Test -->
+                <li>  <a href="the-guessing-game.html"> The Guessing Game </a>  </li> <!-- Sends to Guessing Game -->
+                <li>  <a href="json-example.html"> JSON storage as strings test </a>  </li> <!-- Sends to Guessing Game -->
+            </ul>
+        </div>
 
         <!-- the common website footer that would be used in all website pages -->
         <footer>

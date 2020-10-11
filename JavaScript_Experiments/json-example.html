@@ -1,0 +1,96 @@
+﻿<!-- Samuel Jacuinde -->
+<!-- CSE 4050 -->
+<!-- json-example.html -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Simple Website</title>
+
+        <!--calls the generic-style.css file to be applied to the site-->
+        <link rel="stylesheet" href="generic-style.css">
+
+        <!-- Applies GuessingGameScript.js to the html, making it functional -->
+        <script src="json-testing.js" defer></script>
+
+
+
+        <!-- ********** Firebase chunk ********** -->
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/7.23.0/firebase-app.js"></script>
+
+        <!-- include only the Firebase features as you need -->
+        <!-- to be added later:  <script defer src="/__/firebase/7.23.0/firebase-auth.js"></script> -->
+        <!-- <script defer src="/__/firebase/7.23.0/firebase-database.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-messaging.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-storage.js"></script> -->
+
+        <script defer src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-remote-config.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-performance.js"></script>
+        <!-- initialize the SDK after all desired features are loaded -->
+        <script defer src="/__/firebase/init.js"></script>
+        <!-- ********** END Firebase chunk ********** -->
+
+    </head>
+
+    <body>
+
+        <!-- "title-and-logo" section -->
+        <header>
+            <h1>Play with (internal) JSON stuff!</h1>
+        </header>
+
+        <!-- navigation bar -->
+        <nav>
+            <ul>
+                <li>  <a href="../index.html"> Back To Home </a>  </li> <!-- send back to home page -->
+                <li>  <a href="javascript-index.html"> Back To Javascript Experiments </a>  </li> <!-- send back to javascript page -->
+            </ul>
+        </nav>
+
+        <p>In this experiment, you get to play with saving data of an object in json format.  This is through usage of the JSON.stringify() and JSON.parse()</p>
+        <p>When you click "save object", the data in the feilds update the profile object on the page, and the page uses JSON.stringify() to put the object in JSON format.</p>
+        <p>CLicking "Load object" will use JSON.parse() on the storage string and converts it back into a profile object type.  Any valid information refills the input feilds on the page.</p>
+        <p>CLicking "Clear object" deletes the text stroage and resets the profile back to a default state</p>
+
+        <!-- Divided section for buttons feilds -->
+        <div class="buttons">
+            <button class="saveData">Save Object</button>
+            <button class="loadData">Load Object</button>
+            <button class="clearData">Clear Object</button>
+        </div>
+
+        <!-- Divided section for input feilds -->
+        <div class="InputInfo">
+            <label for="name"> Enter a name: </label>
+            <input type="text" id="name" class="name"><br>
+
+            <label for="age"> Enter an age numerically: </label>
+            <input type="text" id="age" class="age"><br>
+
+            <label for="petName"> Enter a pet's name: </label>
+            <input type="text" id="petName" class="petName"><br>
+
+            <label for="favoriteColor"> Enter the name of a color: </label>
+            <input type="text" id="favoriteColor" class="favoriteColor"><br>
+
+            <label for="favoriteFood"> Enter the name of a food: </label>
+            <input type="text" id="favoriteFood" class="favoriteFood"><br>
+        </div>
+
+        <br />
+        <p>The current JSON storage:</p>
+        <p class="storage">[Empty]</p>
+        <br /><br />
+
+        <!-- the common website footer that would be used in all website pages -->
+        <footer>
+            <p>Page Created by Samuel Jacuinde</p>
+            <p>October, 2020</p>
+        </footer>
+
+    </body>
+
+</html>
