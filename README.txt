@@ -101,6 +101,7 @@ Report 4 Progress: Firebase Auth and Cloud Firestore  (Possibly began work on We
 		-leave-a-message.html
 		-generic-messages.css
 		-messenger.js
+	-Read more guides on html and javascript in order to add a little bit more functionality to my chat application.
 	-This is a basic online chat application, where people can leave messages for one another.  Functionality for deleting sent messages have not been added yet.
 	
 	-uploaded new files to github and deployed to my firebase project
