@@ -1,0 +1,105 @@
+<!-- Samuel Jacuinde -->
+<!-- CSE 4050 -->
+<!-- leave-a-message.html -->
+<!-- HTML Code was written with inspiration/guidance by these video tutorials
+// https://www.youtube.com/watch?v=4d-gIPGzmK4&list=PL4cUxeGkcC9itfjle0ji1xOZ2cjRGY_WB&ab_channel=TheNetNinja
+// https://www.youtube.com/watch?v=aN1LnNq4z54&list=PL4cUxeGkcC9jUPIes_B8vRjn1_GaplOPQ&ab_channel=TheNetNinja -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Simple Website</title>
+
+        <!--calls the generic-style.css file to be applied to the site-->
+        <link rel="stylesheet" href="generic-messages.css">
+
+        <!-- ********** Firebase chunk ********** -->
+        <!-- update the version number as needed -->
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>     <!-- needed to use firebase firestore -->
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+        <!-- include only the Firebase features as you need -->
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>  <!-- needed to use firebase authentication -->
+        <!-- <script defer src="/__/firebase/7.23.0/firebase-database.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-messaging.js"></script>
+        <script defer src="/__/firebase/7.23.0/firebase-storage.js"></script> -->
+
+        <!--<script defer src="/__/firebase/7.24.0/firebase-remote-config.js"></script>
+        <script defer src="/__/firebase/7.24.0/firebase-performance.js"></script>-->
+        <!-- initialize the SDK after all desired features are loaded -->
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyDFLuZ7c_JzOHf5oeLYRqOSHb20KE21Q4M",
+                authDomain: "jacu-cse4050-firebase.firebaseapp.com",
+                databaseURL: "https://jacu-cse4050-firebase.firebaseio.com",
+                projectId: "jacu-cse4050-firebase",
+                storageBucket: "jacu-cse4050-firebase.appspot.com",
+                messagingSenderId: "763429073572",
+                appId: "1:763429073572:web:c16c66c524f8865beaac31",
+                measurementId: "G-X4PKJG47R2"
+            };
+    
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+            const db = firebase.firestore();   //used to initialize our database object we'll be refering to
+            const auth = firebase.auth(); //initializes our authorization sdk
+        </script>
+        <!-- ********** END Firebase chunk ********** -->
+        <script defer src="messenger.js"></script>
+    </head>
+
+    <body>
+        <!-- top login information form -->
+        <form id="loginBar">
+            <label id="emailLabel" for="email">Email:</label>
+            <input type="text" id="email">
+
+            <label id="passwordLabel" for="password">Password:</label>
+            <input type="password" id="password">
+
+            <button class="login">Login</button>
+            <button class="signUp">Sign Up</button>
+        
+            <span class="username">[Empty User Name]</span>
+            <button class="logout">Logout</button>
+        </form>
+
+        <!-- "title-and-logo" section -->
+        <header>
+            <h1>A Test Site for for my work so far in CSE 4050</h1>
+        </header>
+
+        <!-- navigation bar -->
+        <nav>
+            <ul>
+                <li>  <a href="../index.html"> Back To Home </a>  </li> <!-- send back to home page -->
+            </ul>
+        </nav>
+
+        <!-- the "main" content of a website page, is only meant to be used once per page -->
+        <main>
+            <h2>Leave a message for me, the professor, or other students to see!</h2>
+            <P>Welcome to the real-time online chat.  This uses a mixture of firebase auth and cloud firestore in order to make this work.</P>
+            <P>You must be signed on in order to post a message.  Please, no profanity.</P>
+        </main>
+
+        <!-- where the user can submit a message, and read all currently existing messages -->
+        <form id="mainContent">
+            <input type="text" id="message" placeholder="Write your message here"><br>
+            <button class="submitData">Submit Message</button>
+            <p>Recent messages:</p>
+            <ul class="messageList"></ul>
+        </form>
+
+        <!-- the common website footer that would be used in all website pages -->
+        <footer>
+            <p>Page Created by Samuel Jacuinde</p>
+            <p>October, 2020</p>
+        </footer>
+    </body>
+</html>

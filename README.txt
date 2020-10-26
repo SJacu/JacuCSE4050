@@ -92,3 +92,15 @@ Report 4 Progress: Playing with JSON and Firebase Hosting  (Possibly began work 
 		-Essentially, the firebase hosting is now a working showcase of all the work I have so far done in the course, and I will utilize the hosted page as a third form of report to show the working examples.  Files will continue to be pushed to git repository
 
 	-pushed all new file changes to my github, and deployed all work and files onto my firebase website.
+---------------------------------------------------------------------------------------------------------------------------------
+Report 4 Progress: Firebase Auth and Cloud Firestore  (Possibly began work on Webapp1)
+	-followed two tutorial playlists indepth, both can be found here:
+		https://www.youtube.com/watch?v=4d-gIPGzmK4&list=PL4cUxeGkcC9itfjle0ji1xOZ2cjRGY_WB&ab_channel=TheNetNinja
+		https://www.youtube.com/watch?v=aN1LnNq4z54&list=PL4cUxeGkcC9jUPIes_B8vRjn1_GaplOPQ&ab_channel=TheNetNinja
+	-Created three new files in my new Firebase_Experiments folder:
+		-leave-a-message.html
+		-generic-messages.css
+		-messenger.js
+	-This is a basic online chat application, where people can leave messages for one another.  Functionality for deleting sent messages have not been added yet.
+	
+	-uploaded new files to github and deployed to my firebase project
