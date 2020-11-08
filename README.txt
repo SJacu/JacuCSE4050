@@ -93,7 +93,7 @@ Report 4 Progress: Playing with JSON and Firebase Hosting  (Possibly began work 
 
 	-pushed all new file changes to my github, and deployed all work and files onto my firebase website.
 ---------------------------------------------------------------------------------------------------------------------------------
-Report 4 Progress: Firebase Auth and Cloud Firestore  (Possibly began work on Webapp1)
+Report 5 Progress: Firebase Auth and Cloud Firestore  (Possibly began work on Webapp1)
 	-followed two tutorial playlists indepth, both can be found here:
 		https://www.youtube.com/watch?v=4d-gIPGzmK4&list=PL4cUxeGkcC9itfjle0ji1xOZ2cjRGY_WB&ab_channel=TheNetNinja
 		https://www.youtube.com/watch?v=aN1LnNq4z54&list=PL4cUxeGkcC9jUPIes_B8vRjn1_GaplOPQ&ab_channel=TheNetNinja
@@ -105,3 +105,23 @@ Report 4 Progress: Firebase Auth and Cloud Firestore  (Possibly began work on We
 	-This is a basic online chat application, where people can leave messages for one another.  Functionality for deleting sent messages have not been added yet.
 	
 	-uploaded new files to github and deployed to my firebase project
+
+---------------------------------------------------------------------------------------------------------------------------------
+Report 6 Progress: The final Stretch
+	-Began planning out major functionalities for my Webapp project: a re-createion of Minesweeper.
+	-Created new files in my new Web_Application folder:
+		-minesweeper.html
+		-minesweeper.css
+		-minesweep.js
+		-login-script.js
+
+	-I knew that I wanted to use my login system and eventually a leaderboard system, so minesweeper.html, and login-script.js are all mostly re-used code so that way I can keep the basic login-system as in my messaging platform.
+	-For the sake of keeping things clean, I've isolated all my "login-code" into login-script.js.  The main game code will be inside of minesweep.js  I started a new css for this app specifically, to try somthing other than the normal light-blue/white theme I've had this entire course so far.
+	
+	-I started implimentation by creating images inside the Images folder under Web_Application.  These images represent the states of a single tile: a covered tile, a flagged tile, a revealed tile, a bomb tile.
+	-I began work on the basic functionality of minesweeper
+		-Generating an empty table onto the web page.
+		-adding functionality to where you switch between a flagging mode, and a revealing mode.
+		-in revealing mode, if you click on a covered tile, you reveal it.
+		-in flagging mode, you can click on a tile and toggle it between flagged and not flagged.
+		-Give the game the ability to randomly populate the table with bombs.

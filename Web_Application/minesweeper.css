@@ -1,0 +1,35 @@
+﻿/* Samuel Jacuinde */
+/* CSE 4050 */
+/* A new CSS file to be used with minesweeper.html, to try a new color scheme.
+
+
+/* sets the background color to an off - black color */
+body
+{
+    background-color: #15151d;
+}
+
+/*Sets color style for the login bar*/
+#topInfo
+{
+    background-color: orangered;
+    padding: 15px;
+}
+
+/* sets normal paragraph colors to white */
+p {
+    color: white;
+}
+
+/* Will center the game in the middle of the screen */
+.main {
+    text-align: center;
+}
+.gameSpace {
+    text-align: center;
+}
+
+/* Allows the blocks to follow the text-alignment */
+#tile{
+    display: inline-block;
+}
