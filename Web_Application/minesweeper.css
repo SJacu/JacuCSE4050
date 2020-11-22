@@ -32,4 +32,16 @@ p {
 /* Allows the blocks to follow the text-alignment */
 #tile{
     display: inline-block;
+    position: relative;
+    text-align: center;
 }
+
+/* used to center numbers over each tile*/
+#tile span {
+    position: absolute;
+    font: bold;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

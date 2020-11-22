@@ -125,3 +125,16 @@ Report 6 Progress: The final Stretch
 		-in revealing mode, if you click on a covered tile, you reveal it.
 		-in flagging mode, you can click on a tile and toggle it between flagged and not flagged.
 		-Give the game the ability to randomly populate the table with bombs.
+-----------------------------------------------------------------------------------------------------------------------------------
+Report 7 Progress: Basic Gameplay finished
+	-Continued working on my minesweeper game application, working on the same files as the last Report Entry
+		-Added a function which will grab indecies of an indicated ajacent tiles
+		-Added a function which will count the bombs in indicated tiles.
+	-Using the above functions, I used them as a basis to build the last major peices to be able to actually play a game of minesweeper
+		-Every revealed non-bomb tile will either be empty, or have a number representing the amount of bombs that surround that tile
+			-Calculated under the Render_Table function
+		-For bombs with no bombs around them, no number will appear, however when revealed it will also reveal all ajecent tiles
+			-Clear_Out_Board Function
+		-Added states where player has lost, and won the game.  States reset apon playing the "New Game" button on the page.
+			-Player loses apon revealing any bomb
+			-Player wins when #flags = #bombs, and all the bombed tiles are flagged.
