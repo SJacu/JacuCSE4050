@@ -483,7 +483,7 @@ class Tile
 
 // The "main" function.  generates new board, and adds an event listener for "reset table" to the new game button.
 // Currently set to make a board of 10x10, with 10 bombs.
-let playSpace = new Board(10, 10);
+let playSpace = new Board(30, 100);
 newGame.addEventListener("click", (e) =>
 {
     //on a new game, reset table, and set buttons and playmode to appropriate mode
